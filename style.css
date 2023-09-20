@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body{
+    background-color: #ccc;
+    /* border: 5px solid black; */
+    text-align: center;
+}
+
+.container{
+    border: 5px solid white;
+    width: 600px;
+    margin: 20px auto;
+    overflow: auto;
+    /* bagian luar kulit */
+
+    /* padding: 50px 30px;
+    bagian dalam kulit */
+}
+
+.thumb{
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active{
+    opacity: 0.5;
+}
